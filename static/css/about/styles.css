@@ -242,6 +242,10 @@ html, body {
   height: 84px;
   border-radius: 42px;
   margin: 8px 0;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+
 }
 
 .team-data-table {
@@ -250,5 +254,4 @@ html, body {
 	white-space:nowrap;
 	font-size:13px;
 	background-color:#fff;
-    padding:500px;
 }
