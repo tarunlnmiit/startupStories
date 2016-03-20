@@ -256,7 +256,71 @@ html, body {
 	background-color:#fff;
     padding-left: 1000%;
 }
-
-.tarun {
+@media only screen and (max-width: 480px) {
+  .tarun {
+    position:relative;
+    min-width: 100px;
     float: right;
+    margin: 0px -5px 0px 50px;
+  }
+
+  .anmol {
+    min-width: 100px;
+    position: relative;
+    margin: 10px 10px 10px 55px;
+      float: left;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .tarun {
+    position:relative;
+    min-width: 100px;
+    float: right;
+    margin: 10px 50px 10px 10px;
+  }
+
+  .anmol {
+    min-width: 100px;
+    position: relative;
+    margin: 10px 0px 10px 100px;
+      float: left;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .tarun {
+    position:relative;
+    min-width: 100px;
+    float: right;
+    margin: 10px 75px 10px 10px;
+  }
+
+  .anmol {
+    min-width: 100px;
+    position: relative;
+    margin: 10px 0px 10px 150px;
+      float: left;
+  }
+}
+@media only screen and (min-width: 959px) {
+  .tarun {
+      display: flex;
+    position:relative;
+    min-width: 100px;
+    float: right;
+    margin: 10px 50px 25px 10px;
+    align-items: center;
+  }
+
+  .anmol {
+      display: flex;
+    min-width: 100px;
+    position: relative;
+    margin: 10px 0px 25px 50px;
+    float: left;
+    align-items: center;
+  }
+
+    .taruntext,  .anmoltext{
+      padding: 5px 5px 5px 25px;
+  }
 }

@@ -144,33 +144,35 @@
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
-                  <h2 align='center'>Team</h2>
-                  <table class="team-data-table" align='center'>
-                      <tr>
-                          <td>
-                              <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone" align='center'>
-                                <img class="img_container" src="{% static 'img/team/anmol.jpg' %}" />
-                                <h5>Anmol Sachdeva</h5>
-                                <p>
-                                    Content Creator/Marketing Enthusiast
-                                </p>
-                              </div>
-                          </td>
-                          <td>
-                              <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone tarun" align='center'>
-                              <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone" align='center'>
-                                <img class="img_container" src="{% static 'img/team/tarun.jpg' %}" />
-                                <h5>Tarun Gupta</h5>
-                                <p>
-                                    Lead Developer/Programming Enthusiast
-                                </p>
-                              </div>
-                          </td>
-                      </tr>
-                  </table>
+                  <h4 align='center'>Team</h4>
               </div>
-             </div>
+              <div class="team_members">
+              <div class="anmol">
+
+                <img class="img_container" src="{% static 'img/team/anmol.jpg' %}" />
+                <div class="anmoltext">
+                <h5>Anmol Sachdeva</h5>
+                    <p>Content Creator/Marketing Enthusiast</p>
+
+            </div>
+          </div>
+              <div class="tarun">
+
+
+                <img class="img_container" src="{% static 'img/team/tarun.jpg' %}" />
+                <div class="taruntext">
+                <h5>Tarun Gupta</h5>
+
+                <p>Lead Developer/Programming Enthusiast</p>
+
+
+            </div>
+            </div>
+          </div>
+        </div>
          </section><br /><br />
+
+          <br /><br />
         </div>
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
@@ -226,7 +228,7 @@
           </div>
         </footer>
       </main>
-    </div> -->
+    </div>
     <script src="{% static 'js/material.min.js' %}"></script>
   </body>
 </html>
