@@ -248,76 +248,105 @@ html, body {
 
 }
 
-.team-data-table {
+/*.team-data-table {
 	position:relative;
 	border-collapse:collapse;
 	white-space:nowrap;
 	font-size:13px;
 	background-color:#fff;
     padding-left: 1000%;
-}
+}*/
+
 @media only screen and (max-width: 480px) {
   .tarun {
+    display: flex;
+    align-items: center;
     position:relative;
     min-width: 100px;
     float: right;
-    margin: 0px -5px 0px 50px;
+    margin: 0px -25px 0px 15px;
   }
 
   .anmol {
+    display: flex;
+    align-items: center;
     min-width: 100px;
     position: relative;
-    margin: 10px 10px 10px 55px;
+    margin: 5px 5px 5px 15px;
       float: left;
   }
+
+  .taruntext,  .anmoltext{
+    padding: 5px 5px 5px 10px;
+}
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .tarun {
+    display: flex;
+    align-items: center;
     position:relative;
     min-width: 100px;
     float: right;
-    margin: 10px 50px 10px 10px;
+    margin: 10px 10px 10px 10px;
   }
 
   .anmol {
+    display: flex;
+    align-items: center;
     min-width: 100px;
     position: relative;
     margin: 10px 0px 10px 100px;
       float: left;
   }
+
+  .taruntext,  .anmoltext{
+    padding: 5px 5px 5px 25px;
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .tarun {
+    display: flex;
+    align-items: center;
     position:relative;
     min-width: 100px;
     float: right;
-    margin: 10px 75px 10px 10px;
+    margin: 10px 150px 20px 10px;
   }
 
   .anmol {
+    display: flex;
+    align-items: center;
     min-width: 100px;
     position: relative;
-    margin: 10px 0px 10px 150px;
+    margin: 10px 0px 10px 160px;
       float: left;
   }
+
+  .taruntext,  .anmoltext{
+    padding: 5px 5px 5px 25px;
+}
+
+
 }
 @media only screen and (min-width: 959px) {
   .tarun {
       display: flex;
+      align-items: center;
     position:relative;
     min-width: 100px;
     float: right;
-    margin: 10px 50px 25px 10px;
-    align-items: center;
+    margin: 10px 150px 25px 10px;
+
   }
 
   .anmol {
       display: flex;
+      align-items: center;
     min-width: 100px;
     position: relative;
-    margin: 10px 0px 25px 50px;
+    margin: 10px 0px 25px 150px;
     float: left;
-    align-items: center;
+
   }
 
     .taruntext,  .anmoltext{
