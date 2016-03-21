@@ -1,0 +1,65 @@
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square-google > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../../img/logo/google-logo.jpg') center no-repeat;
+}
+
+.googleCard {
+    margin: 4%;
+}
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square-amazon > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../../img/logo/amazon-logo.jpg') center no-repeat;
+}
+
+.amazonCard {
+    margin: 4%;
+}
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square-flipkart > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../../img/logo/flipkart-logo.jpg') center no-repeat;
+}
+
+.flipkartCard {
+    margin: 4%;
+}
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square-nike > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../../img/logo/nike-logo.jpg') center no-repeat;
+}
+
+.nikeCard {
+    margin: 4%;
+}
+
+.direction {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: row;
+}
