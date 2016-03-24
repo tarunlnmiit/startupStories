@@ -33,6 +33,8 @@
 
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
     <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/icon.css' %}">
     <link rel="stylesheet" href="{% static 'css/material.deep_purple-pink.min.css' %}">
     <link rel="stylesheet" href='{% static "css/about/styles.css" %}'>
@@ -71,13 +73,8 @@
                 <!-- Navigation -->
                 <div class="android-navigation-container">
                   <nav class="android-navigation mdl-navigation">
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/">Home</a>
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="about/">About</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{% url 'home' %}">Home</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{% url 'about' %}">About</a>
                   </nav>
                 </div>
                 <span class="android-mobile-title mdl-layout-title">
@@ -87,10 +84,11 @@
                   <i class="material-icons">more_vert</i>
                 </button>
                 <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-                  <li class="mdl-menu__item">5.0 Lollipop</li>
-                  <li class="mdl-menu__item">4.4 KitKat</li>
-                  <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-                  <li class="mdl-menu__item">Android History</li>
+                  <a class="mdl-navigation__link" href="{% url 'roadmap' %}"><li class="mdl-menu__item">Roadmap</li></a>
+                  <li class="mdl-menu__item">F.A.Q</li>
+                  <li class="mdl-menu__item">Blog</li>
+                  <li class="mdl-menu__item">Contact Us</li>
+                  <li class="mdl-menu__item">Privacy and Terms</li>
                 </ul>
               </div>
             </div>
@@ -100,29 +98,12 @@
                 <img class="android-logo-image" src="images/android-logo-white.png">
               </span>
               <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="/">Home</a>
-                <a class="mdl-navigation__link" href="">Tablets</a>
-                <a class="mdl-navigation__link" href="">Wear</a>
-                <a class="mdl-navigation__link" href="">TV</a>
-                <a class="mdl-navigation__link" href="">Auto</a>
-                <a class="mdl-navigation__link" href="">One</a>
-                <a class="mdl-navigation__link" href="about/">About</a>
+                <a class="mdl-navigation__link" href="{% url 'home' %}">Home</a>
+                <a class="mdl-navigation__link" href="{% url 'about' %}">About</a>
                 <div class="android-drawer-separator"></div>
-                <span class="mdl-navigation__link" href="">Versions</span>
-                <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-                <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-                <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-                <a class="mdl-navigation__link" href="">Android history</a>
-                <div class="android-drawer-separator"></div>
-                <span class="mdl-navigation__link" href="">Resources</span>
                 <a class="mdl-navigation__link" href="">Official blog</a>
                 <a class="mdl-navigation__link" href="">Android on Google+</a>
                 <a class="mdl-navigation__link" href="">Android on Twitter</a>
-                <div class="android-drawer-separator"></div>
-                <span class="mdl-navigation__link" href="">For developers</span>
-                <a class="mdl-navigation__link" href="">App developer resources</a>
-                <a class="mdl-navigation__link" href="">Android Open Source Project</a>
-                <a class="mdl-navigation__link" href="">Android SDK</a>
               </nav>
             </div>
 
@@ -153,6 +134,9 @@
                 <div class="anmoltext">
                 <h5>Anmol Sachdeva</h5>
                     <p>Content Creator/ Marketing Enthusiast</p>
+                    <a href="http://www.linkedin.com/in/anmolsach" target="_blank"><img src="{% static 'img/social/linkedin-logo.png' %}" style="padding:0px 10px 0px 0px"></img></a>
+                    <a href="http://www.facebook.com/bournesach" target="_blank"><img src="{% static 'img/social/facebook-logo.png' %}" style="padding:0px 10px 0px 0px"></img></a>
+                    <a href="http://www.twitter.com/_bournesach" target="_blank"><img src="{% static 'img/social/twitter-logo.png' %}" style="padding:0px 10px 0px 0px"></img></a>
 
             </div>
           </div>
@@ -164,6 +148,9 @@
                 <h5>Tarun Gupta</h5>
 
                 <p>Lead Developer/ Programming Enthusiast</p>
+                <a href="http://www.linkedin.com/in/tarun-gupta-3030a672" target="_blank"><img src="{% static 'img/social/linkedin-logo.png' %}" style="padding:0px 10px 0px 0px"></img></a>
+                <a href="http://www.facebook.com/tarun.gupta.16503" target="_blank"><img src="{% static 'img/social/facebook-logo.png' %}" style="padding:0px 10px 0px 0px"></img></a>
+                <a href="http://www.twitter.com/i_tarun_gupta" target="_blank"><img src="{% static 'img/social/twitter-logo.png' %}" style="padding:0px 10px 0px 0px"></img></a>
 
 
             </div>

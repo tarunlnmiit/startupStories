@@ -1,7 +1,10 @@
 
 .demo-card-square.mdl-card {
-  width: 320px;
-  height: 320px;
+  width: 220px;
+  height: 220px;
+  -webkit-flex:1;
+	-moz-flex:1;
+	flex:1;
 }
 .demo-card-square-google > .mdl-card__title {
   color: #fff;
@@ -10,12 +13,12 @@
 }
 
 .googleCard {
-    margin: 4%;
+    margin: 10px !important;
 }
 
 .demo-card-square.mdl-card {
-  width: 320px;
-  height: 320px;
+  width: 220px;
+  height: 220px;
 }
 .demo-card-square-amazon > .mdl-card__title {
   color: #fff;
@@ -24,26 +27,27 @@
 }
 
 .amazonCard {
-    margin: 4%;
+    margin: 10px !important;
 }
 
 .demo-card-square.mdl-card {
-  width: 320px;
-  height: 320px;
+  width: 220px;
+  height: 220px;
 }
 .demo-card-square-flipkart > .mdl-card__title {
   color: #fff;
   background:
     url('../../img/logo/flipkart-logo.jpg') center no-repeat;
+    
 }
 
 .flipkartCard {
-    margin: 4%;
+    margin: 10px !important;
 }
 
 .demo-card-square.mdl-card {
-  width: 320px;
-  height: 320px;
+  width: 220px;
+  height: 220px;
 }
 .demo-card-square-nike > .mdl-card__title {
   color: #fff;
@@ -52,14 +56,36 @@
 }
 
 .nikeCard {
-    margin: 4%;
-}
+    margin: 10px !important;
+    }
 
 .direction {
+  display:-webkit-flex;
+	-webkit-flex-direction:row;
+	-webkit-flex-wrap:wrap;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+    /*float:left;
+    position: relative;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: row;
+             flex-direction:row;
+             -moz-box-orient:horizontal;*/
+}
+
+.demo-card-square.mdl-card {
+  width: 220px;
+  height: 220px;
+}
+.demo-card-square-boosted > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../../img/logo/boosted boards-logo.png') center no-repeat;
+}
+.boostedCard {
+    margin: 10px !important;
 }

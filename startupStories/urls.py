@@ -17,10 +17,13 @@ from django.conf.urls import url
 from django.contrib import admin
 import about.views
 import main.views
+import roadmap.views
 
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^about/$', about.views.about),
-    url(r'^$', main.views.home),
+    url(r'^about/$', about.views.about, name='about'),
+    url(r'^admin/', admin.site.urls, name='admin'),
+    url(r'^$', main.views.home, name='home'),
+    url(r'^home/$', main.views.home, name='home'),
+    url(r'^roadmap/$', roadmap.views.roadmap, name='roadmap'),
 ]
