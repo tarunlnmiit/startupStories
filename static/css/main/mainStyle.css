@@ -1,91 +1,163 @@
 
-.demo-card-square.mdl-card {
-  width: 220px;
-  height: 220px;
-  -webkit-flex:1;
-	-moz-flex:1;
-	flex:1;
+a {
+    text-decoration: none !important;
 }
-.demo-card-square-google > .mdl-card__title {
+
+body {
+  /*padding: 20px;*/
+  background: #fafafa;
+  position: relative;
+}
+
+#pads {
+    padding: 40px;
+}
+
+.demo-card {
+    padding: 10px;
+    display:-webkit-flex;
+  	-webkit-flex-direction:row;
+  	-webkit-flex-wrap:wrap;
+  	display:flex;
+  	flex-direction:row;
+  	flex-wrap:wrap;
+    margin: 1.5%;
+}
+
+.demo-card-image__filename {
   color: #fff;
-  background:
-    url('../../img/logo/google-logo.jpg') center no-repeat;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.googleCard {
-    margin: 10px !important;
+.google-demo-card-image.mdl-card {
+  width: 272px;
+  height: 222px;
+  background: url('../../img/logo/google-logo.jpg') center / cover;
 }
 
-.demo-card-square.mdl-card {
-  width: 220px;
-  height: 220px;
-}
-.demo-card-square-amazon > .mdl-card__title {
-  color: #fff;
-  background:
-    url('../../img/logo/amazon-logo.jpg') center no-repeat;
+.google-demo-card-image > .mdl-card__actions {
+  height: 50px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
-.amazonCard {
-    margin: 10px !important;
+.amazon-demo-card-image.mdl-card {
+  width: 272px;
+  height: 222px;
+  background: url('../../img/logo/amazon-logo.jpg') center / cover;
 }
 
-.demo-card-square.mdl-card {
-  width: 220px;
-  height: 220px;
-}
-.demo-card-square-flipkart > .mdl-card__title {
-  color: #fff;
-  background:
-    url('../../img/logo/flipkart-logo.jpg') center no-repeat;
-    
+.amazon-demo-card-image > .mdl-card__actions {
+  height: 50px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
-.flipkartCard {
-    margin: 10px !important;
+.boosted-demo-card-image.mdl-card {
+  width: 272px;
+  height: 222px;
+  background: url('../../img/logo/boosted boards-logo.png') center / cover;
 }
 
-.demo-card-square.mdl-card {
-  width: 220px;
-  height: 220px;
-}
-.demo-card-square-nike > .mdl-card__title {
-  color: #fff;
-  background:
-    url('../../img/logo/nike-logo.jpg') center no-repeat;
+.boosted-demo-card-image > .mdl-card__actions {
+  height: 50px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
-.nikeCard {
-    margin: 10px !important;
-    }
-
-.direction {
-  display:-webkit-flex;
-	-webkit-flex-direction:row;
-	-webkit-flex-wrap:wrap;
-	display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-    /*float:left;
-    position: relative;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-             flex-direction:row;
-             -moz-box-orient:horizontal;*/
+.dji-demo-card-image.mdl-card {
+  width: 272px;
+  height: 222px;
+  background: url('../../img/logo/dji-logo.jpg') center / cover;
 }
 
-.demo-card-square.mdl-card {
-  width: 220px;
-  height: 220px;
+.dji-demo-card-image > .mdl-card__actions {
+  height: 50px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
 }
-.demo-card-square-boosted > .mdl-card__title {
-  color: #fff;
-  background:
-    url('../../img/logo/boosted boards-logo.png') center no-repeat;
+
+.flipkart-demo-card-image.mdl-card {
+  width: 272px;
+  height: 222px;
+  background: url('../../img/logo/flipkart-logo.jpg') center / cover;
 }
-.boostedCard {
-    margin: 10px !important;
+
+.flipkart-demo-card-image > .mdl-card__actions {
+  height: 50px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.jugnoo-demo-card-image.mdl-card {
+  width: 272px;
+  height: 222px;
+  background: url('../../img/logo/jugnoo-logo.png') center / cover;
+}
+
+.jugnoo-demo-card-image > .mdl-card__actions {
+  height: 50px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.lyst-demo-card-image.mdl-card {
+  width: 272px;
+  height: 222px;
+  background: url('../../img/logo/lyst-logo.jpg') center / cover;
+}
+
+.lyst-demo-card-image > .mdl-card__actions {
+  height: 50px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.nike-demo-card-image.mdl-card {
+  width: 272px;
+  height: 222px;
+  background: url('../../img/logo/nike-logo.jpg') center / cover;
+}
+
+.nike-demo-card-image > .mdl-card__actions {
+  height: 50px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.oyo-demo-card-image.mdl-card {
+  width: 272px;
+  height: 222px;
+  background: url('../../img/logo/oyo rooms-logo.jpg') center / cover;
+}
+
+.oyo-demo-card-image > .mdl-card__actions {
+  height: 50px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.prohunt-demo-card-image.mdl-card {
+  width: 272px;
+  height: 222px;
+  background: url('../../img/logo/product hunt-logo.jpg') center / cover;
+}
+
+.prohunt-demo-card-image > .mdl-card__actions {
+  height: 50px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.tesla-demo-card-image.mdl-card {
+  width: 272px;
+  height: 222px;
+  background: url('../../img/logo/tesla-logo.png') center / cover;
+}
+
+.tesla-demo-card-image > .mdl-card__actions {
+  height: 50px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
 }
