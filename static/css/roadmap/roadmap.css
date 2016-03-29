@@ -55,8 +55,8 @@ html, body {
   height: 4px;
 }
 .mdl-demo main > .mdl-layout__tab-panel {
-  padding: 8px;
-  padding-top: 48px;
+  padding: 48px 8px 8px 8px;
+
 }
 .mdl-demo .mdl-card {
   height: auto;
@@ -66,7 +66,19 @@ html, body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+          flex-wrap: wrap;
 }
+
+.c1 {
+  float: left;
+  width: 49%
+
+}/*
+.c2 {
+    overflow-x:hidden;
+
+}*/
+
 .mdl-demo .mdl-card > * {
   height: auto;
 }
@@ -112,21 +124,25 @@ html, body {
   margin-bottom: 48px;
 }
 .mdl-demo section.section--center {
-  max-width: 1200px;
+  max-width: 600px;
+}
+.mdl-demo section.section--center-2 {
+    max-width: 1000px;
 }
 .mdl-demo #features section.section--center {
-  max-width: 620px;
+  max-width: 600px;
 }
 .mdl-demo section > header{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
+ -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+          flex-wrap: center;
 }
 .mdl-demo section > .section__play-btn {
   min-height: 200px;
@@ -247,110 +263,4 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
 
-}
-
-/*.team-data-table {
-	position:relative;
-	border-collapse:collapse;
-	white-space:nowrap;
-	font-size:13px;
-	background-color:#fff;
-    padding-left: 1000%;
-}*/
-
-@media only screen and (max-width: 480px) {
-  .tarun {
-    display: flex;
-    align-items: center;
-    position:relative;
-    min-width: 100px;
-    float: right;
-    margin: 0px -25px 0px 15px;
-  }
-
-  .anmol {
-    display: flex;
-    align-items: center;
-    min-width: 100px;
-    position: relative;
-    margin: 5px 5px 5px 15px;
-      float: left;
-  }
-
-  .taruntext,  .anmoltext{
-    padding: 5px 5px 5px 10px;
-}
-}
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-  .tarun {
-    display: flex;
-    align-items: center;
-    position:relative;
-    min-width: 100px;
-    float: right;
-    margin: 10px 10px 10px 10px;
-  }
-
-  .anmol {
-    display: flex;
-    align-items: center;
-    min-width: 100px;
-    position: relative;
-    margin: 10px 0px 10px 100px;
-      float: left;
-  }
-
-  .taruntext,  .anmoltext{
-    padding: 5px 5px 5px 25px;
-}
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .tarun {
-    display: flex;
-    align-items: center;
-    position:relative;
-    min-width: 100px;
-    float: right;
-    margin: 10px 150px 20px 10px;
-  }
-
-  .anmol {
-    display: flex;
-    align-items: center;
-    min-width: 100px;
-    position: relative;
-    margin: 10px 0px 10px 160px;
-      float: left;
-  }
-
-  .taruntext,  .anmoltext{
-    padding: 5px 5px 5px 25px;
-}
-
-
-}
-@media only screen and (min-width: 959px) {
-  .tarun {
-      display: flex;
-      align-items: center;
-    position:relative;
-    min-width: 100px;
-    float: right;
-    margin: 10px 150px 25px 10px;
-
-  }
-
-  .anmol {
-      display: flex;
-      align-items: center;
-    min-width: 100px;
-    position: relative;
-    margin: 10px 0px 25px 150px;
-    float: left;
-
-  }
-
-    .taruntext,  .anmoltext{
-      padding: 5px 5px 5px 25px;
-  }
 }

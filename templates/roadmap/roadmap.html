@@ -1,14 +1,16 @@
-<!doctype html>
-
-{% load staticfiles %}
+<!doctype html> {% load staticfiles %}
 
 <html lang="en">
-  <head>
+
+<head>
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RoadMap|StartupStories</title>
+    <title>StartupStories</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -28,159 +30,143 @@
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
-    <link rel="canonical" href="http://www.example.com/">
+    <link rel                          ="canonical" href="http://www.example.com/">
     -->
 
+    <link rel="stylesheet" href="{% static 'css/roadmap/roadmap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/material-design-iconic-font.css' %}">
+    <link rel="stylesheet" href="{% static 'css/material-design-iconic-font.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flip.css' %}">
     <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
-    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
-    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/icon.css' %}">
     <link rel="stylesheet" href="{% static 'css/material.deep_purple-pink.min.css' %}">
-    <link rel="stylesheet" href='{% static "css/about/styles.css" %}'>
     <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
     </style>
-  </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <main class="mdl-layout__content">
-          <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+</head>
 
-            <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-              <div class="mdl-layout__header-row">
-                <span class="android-title mdl-layout-title">
-                  <img class="android-logo-image" src="images/android-logo.png">
-                </span>
-                <!-- Add spacer, to align navigation to the right in desktop -->
-                <div class="android-header-spacer mdl-layout-spacer"></div>
-                <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-                  <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-                    <i class="material-icons">search</i>
-                  </label>
-                  <div class="mdl-textfield__expandable-holder">
-                    <input class="mdl-textfield__input" type="text" id="search-field">
-                  </div>
-                </div>
-                <!-- Navigation -->
-                <div class="android-navigation-container">
-                  <nav class="android-navigation mdl-navigation">
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{% url 'home' %}">Home</a>
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{% url 'about' %}">About</a>
-                  </nav>
-                </div>
-                <span class="android-mobile-title mdl-layout-title">
-                  <img class="android-logo-image" src="images/android-logo.png">
-                </span>
-                <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-                  <i class="material-icons">more_vert</i>
-                </button>
-                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-                  <a class="mdl-navigation__link" href="{% url 'roadmap' %}"><li class="mdl-menu__item">Roadmap</li></a>
-                  <li class="mdl-menu__item">F.A.Q</li>
-                  <li class="mdl-menu__item">Blog</li>
-                  <li class="mdl-menu__item">Contact Us</li>
-                  <li class="mdl-menu__item">Privacy and Terms</li>
-                </ul>
-              </div>
-            </div>
+<body>
+    <div class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <main class="mdl-layout__content">
+                <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-            <div class="android-drawer mdl-layout__drawer">
-              <span class="mdl-layout-title">
-                <img class="android-logo-image" src="images/android-logo-white.png">
+                    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+                        <div class="mdl-layout__header-row">
+                            <span class="android-title mdl-layout-title">
+                  <img class           ="android-logo-image" src="images/android-logo.png">
+                </span>
+                            <!-- Add spacer, to align navigation to the right in desktop -->
+                            <div class="android-header-spacer mdl-layout-spacer"></div>
+                            <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+                                <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+                                    <i class="material-icons">search</i>
+                                </label>
+                                <div class="mdl-textfield__expandable-holder">
+                                    <input class="mdl-textfield__input" type="text" id="search-field">
+                                </div>
+                            </div>
+                            <!-- Navigation -->
+                            <div class="android-navigation-container">
+                                <nav class="android-navigation mdl-navigation">
+                                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{% url 'home' %}">Home</a>
+                                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{% url 'about' %}">About</a>
+                                </nav>
+                            </div>
+                            <span class="android-mobile-title mdl-layout-title">
+                  <img class           ="android-logo-image" src="images/android-logo.png">
+                </span>
+                            <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+                                <i class="material-icons">more_vert</i>
+                            </button>
+                            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+                                <a class="mdl-navigation__link" href="{% url 'roadmap' %}">
+                                    <li class="mdl-menu__item">Roadmap</li>
+                                </a>
+                                <li class="mdl-menu__item">F.A.Q</li>
+                                <li class="mdl-menu__item">Blog</li>
+                                <li class="mdl-menu__item">Contact Us</li>
+                                <li class="mdl-menu__item">Privacy and Terms</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="android-drawer mdl-layout__drawer">
+                        <span class="mdl-layout-title">
+                <img class             ="android-logo-image" src="images/android-logo-white.png">
               </span>
-              <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="{% url 'home' %}">Home</a>
-                <a class="mdl-navigation__link" href="{% url 'about' %}">About</a>
-                <div class="android-drawer-separator"></div>
-                <a class="mdl-navigation__link" href="">Official blog</a>
-                <a class="mdl-navigation__link" href="">Android on Google+</a>
-                <a class="mdl-navigation__link" href="">Android on Twitter</a>
-              </nav>
-            </div>
+                        <nav class="mdl-navigation">
+                            <a class="mdl-navigation__link" href="{% url 'home' %}">Home</a>
+                            <a class="mdl-navigation__link" href="{% url 'about' %}">About</a>
+                            <div class="android-drawer-separator"></div>
+                            <a class="mdl-navigation__link" href="">Official blog</a>
+                            <a class="mdl-navigation__link" href="">Android on Google+</a>
+                            <a class="mdl-navigation__link" href="">Android on Twitter</a>
+                        </nav>
+                    </div>
+                    <div class="android-content mdl-layout__content">
+                        <a name="top"></a>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="mdl-layout__tab-panel is-active" id="overview">
+                    <section class="c1 section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                        <div class=" mdl-card mdl-cell mdl-cell--12-col">
+                            <div class="mdl-card__supporting-text">
+                                <h4>ROADMAP</h4> Here will go the roadmap.
+                            </div>
+                        </div>
+                    </section>
 
-            <div class="android-content mdl-layout__content">
-              <a name="top"></a>
-            </div>
-          </div>
-          <br /><br />
-        <div class="mdl-layout__tab-panel is-active" id="overview">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>ROADMAP</h4>
-                Here will go the roadmap.
-              </div>
-             </div>
-          </section>
+                    <section class="c2 section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                        <div class="mdl-card mdl-cell mdl-cell--12-col">
+                            <div class="mdl-card__supporting-text">
+                                <h4>ROADMAP</h4> Here will go the roadmap.
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section--center-2 mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                        <div class="mdl-card mdl-cell mdl-cell--12-col">
+                            <div class="mdl-card__supporting-text">
+                                <h4>Suggestion Box</h4>
+                                <form action="#">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="sample3">
+                                        <label class="mdl-textfield__label" for="sample3">Full Name</label>
+                                    </div>
+                                    <br />
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="sample3">
+                                        <label class="mdl-textfield__label" for="sample3">E-mail</label>
+                                    </div>
+                                    <br />
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <textarea class="mdl-textfield__input" type="text" rows="5" id="sample5"></textarea>
+                                        <label class="mdl-textfield__label" for="sample5">Text lines...</label>
+                                    </div>
+                                    <br />
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                        SUGGEST
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
-          <br /><br />
-
-          <br /><br />
+            </main>
         </div>
-        <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--middle-section">
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Features</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Updates</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Details</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Spec</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Resources</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Technology</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Patterns</a></li>
-                <li><a href="#">Usage</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contracts</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">FAQ</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Questions</a></li>
-                <li><a href="#">Answers</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="mdl-mega-footer--bottom-section">
-            <div class="mdl-logo">
-              More Information
-            </div>
-            <ul class="mdl-mega-footer--link-list">
-              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Privacy and Terms</a></li>
-            </ul>
-          </div>
-        </footer>
-      </main>
     </div>
-    <script src="{% static 'js/material.min.js' %}"></script>
-  </body>
+</body>
+
 </html>
