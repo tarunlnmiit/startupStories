@@ -25,7 +25,7 @@ body {
 }
 
 .demo-card-image__filename {
-  color: #fff;
+  color: #000000;
   font-size: 16px;
   font-weight: 600;
 }
@@ -103,7 +103,7 @@ body {
 .jugnoo-demo-card-image.mdl-card {
   width: 272px;
   height: 222px;
-  background: url('../../img/logo/jugnoo-logo.png') center / cover no-repeat;
+  background: url('../../img/logo/jugnoo-logo.jpg') center / cover no-repeat;
   background-size: 160px 160px;
   background-color: #fff;
 }
@@ -118,7 +118,7 @@ body {
   width: 272px;
   height: 222px;
   background: url('../../img/logo/lyst-logo.jpg') center / cover no-repeat;
-  background-size: 160px 160px;
+  background-size: 130px 130px;
   background-color: #fff;
 }
 

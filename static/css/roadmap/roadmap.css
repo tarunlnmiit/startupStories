@@ -63,21 +63,11 @@ html, body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
           flex-wrap: wrap;
 }
-
-.c1 {
-  float: left;
-  width: 49%
-
-}/*
-.c2 {
-    overflow-x:hidden;
-
-}*/
 
 .mdl-demo .mdl-card > * {
   height: auto;
@@ -235,9 +225,9 @@ html, body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .mdl-demo .toc h4 {
   font-size: 0.9rem;
@@ -263,4 +253,47 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
 
+}
+
+.demo-card {
+    padding: 0px;
+    display:-webkit-flex;
+  	-webkit-flex-direction:row;
+  	-webkit-flex-wrap:wrap;
+  	display:flex;
+  	flex-direction:row;
+  	flex-wrap:wrap;
+    margin: 1.5%;
+}
+
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.prohunt-demo-card-image.mdl-card {
+  width: 272px;
+  height: 222px;
+  background: url('../../img/logo/product hunt-logo.jpg') center / cover no-repeat;
+  background-size: 160px 160px;
+  background-color: #fff;
+}
+
+.prohunt-demo-card-image > .mdl-card__actions {
+  height: 50px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.c1 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    display: inline-block;
+}
+
+#dir {
+    flex-wrap: wrap;
+    flex-flow: row;
 }

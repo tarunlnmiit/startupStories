@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>StartupStories</title>
+    <title>RoadMap|StartupStories</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -93,7 +93,9 @@
                                     <li class="mdl-menu__item">Roadmap</li>
                                 </a>
                                 <li class="mdl-menu__item">F.A.Q</li>
-                                <li class="mdl-menu__item">Blog</li>
+                                <a class="mdl-navigation__link" href="{% url 'blog' %}">
+                                    <li class="mdl-menu__item">Blog</li>
+                                </a>
                                 <li class="mdl-menu__item">Contact Us</li>
                                 <li class="mdl-menu__item">Privacy and Terms</li>
                             </ul>
@@ -108,7 +110,7 @@
                             <a class="mdl-navigation__link" href="{% url 'home' %}">Home</a>
                             <a class="mdl-navigation__link" href="{% url 'about' %}">About</a>
                             <div class="android-drawer-separator"></div>
-                            <a class="mdl-navigation__link" href="">Official blog</a>
+                            <a class="mdl-navigation__link" href="{% url 'blog' %}">Official blog</a>
                             <a class="mdl-navigation__link" href="">Android on Google+</a>
                             <a class="mdl-navigation__link" href="">Android on Twitter</a>
                         </nav>
@@ -120,21 +122,32 @@
                 <br>
                 <br>
                 <div class="mdl-layout__tab-panel is-active" id="overview">
-                    <section class="c1 section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <section class="c1 section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp demo-card">
                         <div class=" mdl-card mdl-cell mdl-cell--12-col">
                             <div class="mdl-card__supporting-text">
-                                <h4>ROADMAP</h4> Here will go the roadmap.
+                                <div class="prohunt-demo-card-image mdl-card">
+                                    <div class="mdl-card__title mdl-card--expand"></div>
+                                    <div class="mdl-card__actions" align="center">
+                                        <span class="demo-card-image__filename">Front Product Hunt</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
 
-                    <section class="c2 section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-                        <div class="mdl-card mdl-cell mdl-cell--12-col">
+                    <section class="c1 section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp demo-card">
+                        <div class=" mdl-card mdl-cell mdl-cell--12-col">
                             <div class="mdl-card__supporting-text">
-                                <h4>ROADMAP</h4> Here will go the roadmap.
+                                <div class="prohunt-demo-card-image mdl-card">
+                                    <div class="mdl-card__title mdl-card--expand"></div>
+                                    <div class="mdl-card__actions" align="center">
+                                        <span class="demo-card-image__filename">Front Product Hunt</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
+
                     <section class="section--center-2 mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
                         <div class="mdl-card mdl-cell mdl-cell--12-col">
                             <div class="mdl-card__supporting-text">

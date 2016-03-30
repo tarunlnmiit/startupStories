@@ -93,7 +93,9 @@
                                     <li class="mdl-menu__item">Roadmap</li>
                                 </a>
                                 <li class="mdl-menu__item">F.A.Q</li>
-                                <li class="mdl-menu__item">Blog</li>
+                                <a class="mdl-navigation__link" href="{% url 'blog' %}">
+                                    <li class="mdl-menu__item">Blog</li>
+                                </a>
                                 <li class="mdl-menu__item">Contact Us</li>
                                 <li class="mdl-menu__item">Privacy and Terms</li>
                             </ul>
@@ -108,7 +110,7 @@
                             <a class="mdl-navigation__link" href="{% url 'home' %}">Home</a>
                             <a class="mdl-navigation__link" href="{% url 'about' %}">About</a>
                             <div class="android-drawer-separator"></div>
-                            <a class="mdl-navigation__link" href="">Official blog</a>
+                            <a class="mdl-navigation__link" href="{% url 'blog' %}">Official blog</a>
                             <a class="mdl-navigation__link" href="">Android on Google+</a>
                             <a class="mdl-navigation__link" href="">Android on Twitter</a>
                         </nav>
