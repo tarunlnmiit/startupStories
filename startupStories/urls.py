@@ -16,9 +16,10 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 import about.views
-import main.views
-import changeLog.views
 import blog.views
+import changeLog.views
+import contact.views
+import main.views
 
 
 urlpatterns = [
@@ -26,6 +27,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls, name='admin'),
     url(r'^blog/', include('blog.urls')),
     url(r'^change-log/$', changeLog.views.changeLog, name='changeLog'),
+    url(r'^contactUs/$', contact.views.contact, name='contact'),
     url(r'^faqs/$', about.views.faqs, name='faqs'),
     url(r'^$', main.views.home, name='home'),
     url(r'^home/$', main.views.home, name='home'),
