@@ -17,7 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 import about.views
 import main.views
-import roadmap.views
+import changeLog.views
 import blog.views
 
 
@@ -25,9 +25,9 @@ urlpatterns = [
     url(r'^about/$', about.views.about, name='about'),
     url(r'^admin/', admin.site.urls, name='admin'),
     url(r'^blog/', include('blog.urls')),
+    url(r'^change-log/$', changeLog.views.changeLog, name='changeLog'),
     url(r'^faqs/$', about.views.faqs, name='faqs'),
     url(r'^$', main.views.home, name='home'),
     url(r'^home/$', main.views.home, name='home'),
     url(r'^privacy-terms/$', about.views.privacyTerms, name='privacy-terms'),
-    url(r'^roadmap/$', roadmap.views.roadmap, name='roadmap'),
 ]
