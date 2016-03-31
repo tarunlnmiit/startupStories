@@ -4,6 +4,7 @@
 
 <head>
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
 
     <meta charset="utf-8">
@@ -92,12 +93,16 @@
                                 <a class="mdl-navigation__link" href="{% url 'roadmap' %}">
                                     <li class="mdl-menu__item">Roadmap</li>
                                 </a>
-                                <li class="mdl-menu__item">F.A.Q</li>
+                                <a class="mdl-navigation__link" href="{% url 'faqs' %}">
+                                    <li class="mdl-menu__item">FAQs</li>
+                                </a>
                                 <a class="mdl-navigation__link" href="{% url 'blog' %}">
                                     <li class="mdl-menu__item">Blog</li>
                                 </a>
                                 <li class="mdl-menu__item">Contact Us</li>
-                                <li class="mdl-menu__item">Privacy and Terms</li>
+                                <a class="mdl-navigation__link" href="{% url 'privacy-terms' %}">
+                                    <li class="mdl-menu__item">Privacy and Terms</li>
+                                </a>
                             </ul>
                         </div>
                     </div>
@@ -113,6 +118,11 @@
                             <a class="mdl-navigation__link" href="{% url 'blog' %}">Official blog</a>
                             <a class="mdl-navigation__link" href="">Android on Google+</a>
                             <a class="mdl-navigation__link" href="">Android on Twitter</a>
+                            <div class="mdl-navigation__link">
+                                <i class="zmdi zmdi-facebook zmdi-hc-2x"></i> &nbsp; &nbsp;
+                                <i class="zmdi zmdi-linkedin-box zmdi-hc-2x"></i> &nbsp &nbsp
+                                <i class="zmdi zmdi-twitter zmdi-hc-2x"></i>
+                            </div>
                         </nav>
                     </div>
                     <div class="android-content mdl-layout__content">

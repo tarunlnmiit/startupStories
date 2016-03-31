@@ -204,7 +204,7 @@ p {
 	margin:0 0 16px
 }
 a {
-	color:rgb(255,64,129);
+	color:rgba(0,0,0,.87);
 	font-weight:500
 }
 blockquote {
