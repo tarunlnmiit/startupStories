@@ -28,6 +28,6 @@ urlpatterns = [
     url(r'^faqs/$', about.views.faqs, name='faqs'),
     url(r'^$', main.views.home, name='home'),
     url(r'^home/$', main.views.home, name='home'),
-    url(r'^privacyTerms/$', about.views.privacyTerms, name='privacyTerms'),
+    url(r'^privacy-terms/$', about.views.privacyTerms, name='privacy-terms'),
     url(r'^roadmap/$', roadmap.views.roadmap, name='roadmap'),
 ]
