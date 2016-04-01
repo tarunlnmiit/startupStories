@@ -183,3 +183,39 @@ body {
   padding: 16px;
   background: rgba(0, 0, 0, 0.2);
 }
+
+.back-demo-card-image.mdl-card {
+    width: 272px;
+    height: 222px;
+    float: left;
+    padding: 5px;
+}
+
+.logo-size {
+    width: 60px;
+    height: 60px;
+}
+
+#flt {
+    float: left;
+    display: inline;
+}
+
+.line-align {
+    /*line-height: 25px;*/
+    padding: 10px;
+    text-align: center;
+}
+
+.font-data {
+    padding: 4px;
+}
+
+.para {
+    width: 75%;
+}
+
+.social-icons {
+    padding-left: 20px;
+    align-self: center;
+}
