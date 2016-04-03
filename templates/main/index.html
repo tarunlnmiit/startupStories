@@ -49,6 +49,7 @@
 </head>
 
 <body>
+    <div ng-app="MyApp" ng-controller="AppCtrl">
     <div class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
             <main class="mdl-layout__content">
@@ -85,9 +86,14 @@
 
 
                 </div>
+            </div>
             </main>
         </div>
     </div>
+
+    {% include 'headJs.html' %}
+
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 
 </html>

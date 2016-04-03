@@ -219,3 +219,21 @@ body {
     padding-left: 20px;
     align-self: center;
 }
+
+.dialogdemoBasicUsage {
+  position: relative; }
+
+.dialogdemoBasicUsage .footer {
+  width: 100%;
+  text-align: center;
+  margin-left: 20px; }
+
+.dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
+  font-size: 0.8em;
+  margin-top: 50px; }
+
+.dialogdemoBasicUsage button {
+  width: 120px; }
+
+.dialogdemoBasicUsage div#status {
+  color: #c60008; }
