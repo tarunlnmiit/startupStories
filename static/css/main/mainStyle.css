@@ -1,239 +1,205 @@
-
 a {
     text-decoration: none !important;
 }
-
 body {
-  /*padding: 20px;*/
-  background: #ededed;
-  position: relative;
+    /*padding: 20px;*/
+    background: #ededed;
+    position: relative;
 }
-
 #pads {
     padding: 40px;
 }
-
 .demo-card {
     padding: 0px;
-    display:-webkit-flex;
-  	-webkit-flex-direction:row;
-  	-webkit-flex-wrap:wrap;
-  	display:flex;
-  	flex-direction:row;
-  	flex-wrap:wrap;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 1.5%;
 }
-
 .demo-card-image__filename {
-  color: #000000;
-  font-size: 16px;
-  font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
 }
-
 .google-demo-card-image.mdl-card {
-  width: 272px;
-  height: 222px;
-  background: url('../../img/logo/google-logo.jpg') center / cover no-repeat;
-  background-size: 160px 160px;
-  background-color: #fff;
+    width: 272px;
+    height: 222px;
+    background: url('../../img/logo/google-logo.jpg') center / cover no-repeat;
+    background-size: 160px 160px;
+    background-color: #fff;
 }
-
 .google-demo-card-image > .mdl-card__actions {
-  height: 50px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+    height: 50px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
 }
-
 .amazon-demo-card-image.mdl-card {
-  width: 272px;
-  height: 222px;
-  background: url('../../img/logo/amazon-logo.jpg') center / cover no-repeat;
-  background-size: 160px 160px;
-  background-color: #fff;
+    width: 272px;
+    height: 222px;
+    background: url('../../img/logo/amazon-logo.jpg') center / cover no-repeat;
+    background-size: 160px 160px;
+    background-color: #fff;
 }
-
 .amazon-demo-card-image > .mdl-card__actions {
-  height: 50px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+    height: 50px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
 }
-
 .boosted-demo-card-image.mdl-card {
-  width: 272px;
-  height: 222px;
-  background: url('../../img/logo/boosted boards-logo.png') center / cover no-repeat;
-  background-size: 160px 160px;
-  background-color: #fff;
+    width: 272px;
+    height: 222px;
+    background: url('../../img/logo/boosted boards-logo.png') center / cover no-repeat;
+    background-size: 160px 160px;
+    background-color: #fff;
 }
-
 .boosted-demo-card-image > .mdl-card__actions {
-  height: 50px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+    height: 50px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
 }
-
 .dji-demo-card-image.mdl-card {
-  width: 272px;
-  height: 222px;
-  background: url('../../img/logo/dji-logo.jpg') center / cover no-repeat;
-  background-size: 160px 160px;
-  background-color: #fff;
+    width: 272px;
+    height: 222px;
+    background: url('../../img/logo/dji-logo.jpg') center / cover no-repeat;
+    background-size: 160px 160px;
+    background-color: #fff;
 }
-
 .dji-demo-card-image > .mdl-card__actions {
-  height: 50px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+    height: 50px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
 }
-
 .flipkart-demo-card-image.mdl-card {
-  width: 272px;
-  height: 222px;
-  background: url('../../img/logo/flipkart-logo.jpg') center / cover no-repeat;
-  background-size: 160px 160px;
-  background-color: #fff;
+    width: 272px;
+    height: 222px;
+    background: url('../../img/logo/flipkart-logo.jpg') center / cover no-repeat;
+    background-size: 160px 160px;
+    background-color: #fff;
 }
-
 .flipkart-demo-card-image > .mdl-card__actions {
-  height: 50px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+    height: 50px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
 }
-
 .jugnoo-demo-card-image.mdl-card {
-  width: 272px;
-  height: 222px;
-  background: url('../../img/logo/jugnoo-logo.jpg') center / cover no-repeat;
-  background-size: 160px 160px;
-  background-color: #fff;
+    width: 272px;
+    height: 222px;
+    background: url('../../img/logo/jugnoo-logo.jpg') center / cover no-repeat;
+    background-size: 160px 160px;
+    background-color: #fff;
 }
-
 .jugnoo-demo-card-image > .mdl-card__actions {
-  height: 50px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+    height: 50px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
 }
-
 .lyst-demo-card-image.mdl-card {
-  width: 272px;
-  height: 222px;
-  background: url('../../img/logo/lyst-logo.jpg') center / cover no-repeat;
-  background-size: 130px 130px;
-  background-color: #fff;
+    width: 272px;
+    height: 222px;
+    background: url('../../img/logo/lyst-logo.jpg') center / cover no-repeat;
+    background-size: 130px 130px;
+    background-color: #fff;
 }
-
 .lyst-demo-card-image > .mdl-card__actions {
-  height: 50px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+    height: 50px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
 }
-
 .nike-demo-card-image.mdl-card {
-  width: 272px;
-  height: 222px;
-  background: url('../../img/logo/nike-logo.jpg') center / cover no-repeat;
-  background-size: 160px 160px;
-  background-color: #fff;
+    width: 272px;
+    height: 222px;
+    background: url('../../img/logo/nike-logo.jpg') center / cover no-repeat;
+    background-size: 160px 160px;
+    background-color: #fff;
 }
-
 .nike-demo-card-image > .mdl-card__actions {
-  height: 50px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+    height: 50px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
 }
-
 .oyo-demo-card-image.mdl-card {
-  width: 272px;
-  height: 222px;
-  background: url('../../img/logo/oyo rooms-logo.jpg') center / cover no-repeat;
-  background-size: 160px 160px;
-  background-color: #fff;
+    width: 272px;
+    height: 222px;
+    background: url('../../img/logo/oyo rooms-logo.jpg') center / cover no-repeat;
+    background-size: 160px 160px;
+    background-color: #fff;
 }
-
 .oyo-demo-card-image > .mdl-card__actions {
-  height: 50px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+    height: 50px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
 }
-
 .prohunt-demo-card-image.mdl-card {
-  width: 272px;
-  height: 222px;
-  background: url('../../img/logo/product hunt-logo.jpg') center / cover no-repeat;
-  background-size: 160px 160px;
-  background-color: #fff;
+    width: 272px;
+    height: 222px;
+    background: url('../../img/logo/product hunt-logo.jpg') center / cover no-repeat;
+    background-size: 160px 160px;
+    background-color: #fff;
 }
-
 .prohunt-demo-card-image > .mdl-card__actions {
-  height: 50px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+    height: 50px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
 }
-
 .tesla-demo-card-image.mdl-card {
-  width: 272px;
-  height: 222px;
-  background: url('../../img/logo/tesla-logo.png') center / cover no-repeat;
-  background-size: 160px 160px;
-  background-color: #fff;
+    width: 272px;
+    height: 222px;
+    background: url('../../img/logo/tesla-logo.png') center / cover no-repeat;
+    background-size: 160px 160px;
+    background-color: #fff;
 }
-
 .tesla-demo-card-image > .mdl-card__actions {
-  height: 50px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+    height: 50px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
 }
-
 .back-demo-card-image.mdl-card {
     width: 272px;
     height: 222px;
     float: left;
     padding: 5px;
 }
-
 .logo-size {
     width: 60px;
     height: 60px;
 }
-
 #flt {
     float: left;
     display: inline;
 }
-
 .line-align {
     /*line-height: 25px;*/
     padding: 10px;
     text-align: center;
 }
-
 .font-data {
     padding: 4px;
 }
-
 .para {
     width: 75%;
 }
-
 .social-icons {
     padding-left: 20px;
     align-self: center;
 }
-
 .dialogdemoBasicUsage {
-  position: relative; }
-
+    position: relative;
+}
 .dialogdemoBasicUsage .footer {
-  width: 100%;
-  text-align: center;
-  margin-left: 20px; }
-
+    width: 100%;
+    text-align: center;
+    margin-left: 20px;
+}
 .dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
-  font-size: 0.8em;
-  margin-top: 50px; }
-
+    font-size: 0.8em;
+    margin-top: 50px;
+}
 .dialogdemoBasicUsage button {
-  width: 120px; }
-
+    width: 120px;
+}
 .dialogdemoBasicUsage div#status {
-  color: #c60008; }
+    color: #c60008;
+}
