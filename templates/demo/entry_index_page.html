@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+
+
+        {% load endless %}
+
+        {% paginate entries %}
+        {% for entry in entries %}
+            {# your code to show the entry #}
+            {{ entry }}<br><br>
+        {% endfor %}
+        {% show_more %}
+
+
+    </body>
+</html>

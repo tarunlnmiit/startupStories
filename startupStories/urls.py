@@ -19,6 +19,7 @@ import about.views
 import blog.views
 import changeLog.views
 import contact.views
+import demo.views
 import main.views
 
 
@@ -28,6 +29,7 @@ urlpatterns = [
     url(r'^blog/', include('blog.urls')),
     url(r'^change-log/$', changeLog.views.changeLog, name='changeLog'),
     url(r'^contactUs/$', contact.views.contact, name='contact'),
+    url(r'^demo/$', demo.views.entry_index, name='demo'),
     url(r'^faqs/$', about.views.faqs, name='faqs'),
     url(r'^$', main.views.home, name='home'),
     url(r'^home/$', main.views.home, name='home'),
