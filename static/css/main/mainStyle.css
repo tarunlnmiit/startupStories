@@ -24,134 +24,13 @@ body {
     font-size: 16px;
     font-weight: 600;
 }
-.google-demo-card-image.mdl-card {
+.demo-card-image.mdl-card {
     width: 272px;
     height: 222px;
-    background: url('../../img/logo/google-logo.jpg') center / cover no-repeat;
     background-size: 160px 160px;
     background-color: #fff;
 }
-.google-demo-card-image > .mdl-card__actions {
-    height: 50px;
-    padding: 16px;
-    background: rgba(0, 0, 0, 0.2);
-}
-.amazon-demo-card-image.mdl-card {
-    width: 272px;
-    height: 222px;
-    background: url('../../img/logo/amazon-logo.jpg') center / cover no-repeat;
-    background-size: 160px 160px;
-    background-color: #fff;
-}
-.amazon-demo-card-image > .mdl-card__actions {
-    height: 50px;
-    padding: 16px;
-    background: rgba(0, 0, 0, 0.2);
-}
-.boosted-demo-card-image.mdl-card {
-    width: 272px;
-    height: 222px;
-    background: url('../../img/logo/boosted boards-logo.png') center / cover no-repeat;
-    background-size: 160px 160px;
-    background-color: #fff;
-}
-.boosted-demo-card-image > .mdl-card__actions {
-    height: 50px;
-    padding: 16px;
-    background: rgba(0, 0, 0, 0.2);
-}
-.dji-demo-card-image.mdl-card {
-    width: 272px;
-    height: 222px;
-    background: url('../../img/logo/dji-logo.jpg') center / cover no-repeat;
-    background-size: 160px 160px;
-    background-color: #fff;
-}
-.dji-demo-card-image > .mdl-card__actions {
-    height: 50px;
-    padding: 16px;
-    background: rgba(0, 0, 0, 0.2);
-}
-.flipkart-demo-card-image.mdl-card {
-    width: 272px;
-    height: 222px;
-    background: url('../../img/logo/flipkart-logo.jpg') center / cover no-repeat;
-    background-size: 160px 160px;
-    background-color: #fff;
-}
-.flipkart-demo-card-image > .mdl-card__actions {
-    height: 50px;
-    padding: 16px;
-    background: rgba(0, 0, 0, 0.2);
-}
-.jugnoo-demo-card-image.mdl-card {
-    width: 272px;
-    height: 222px;
-    background: url('../../img/logo/jugnoo-logo.jpg') center / cover no-repeat;
-    background-size: 160px 160px;
-    background-color: #fff;
-}
-.jugnoo-demo-card-image > .mdl-card__actions {
-    height: 50px;
-    padding: 16px;
-    background: rgba(0, 0, 0, 0.2);
-}
-.lyst-demo-card-image.mdl-card {
-    width: 272px;
-    height: 222px;
-    background: url('../../img/logo/lyst-logo.jpg') center / cover no-repeat;
-    background-size: 130px 130px;
-    background-color: #fff;
-}
-.lyst-demo-card-image > .mdl-card__actions {
-    height: 50px;
-    padding: 16px;
-    background: rgba(0, 0, 0, 0.2);
-}
-.nike-demo-card-image.mdl-card {
-    width: 272px;
-    height: 222px;
-    background: url('../../img/logo/nike-logo.jpg') center / cover no-repeat;
-    background-size: 160px 160px;
-    background-color: #fff;
-}
-.nike-demo-card-image > .mdl-card__actions {
-    height: 50px;
-    padding: 16px;
-    background: rgba(0, 0, 0, 0.2);
-}
-.oyo-demo-card-image.mdl-card {
-    width: 272px;
-    height: 222px;
-    background: url('../../img/logo/oyo rooms-logo.jpg') center / cover no-repeat;
-    background-size: 160px 160px;
-    background-color: #fff;
-}
-.oyo-demo-card-image > .mdl-card__actions {
-    height: 50px;
-    padding: 16px;
-    background: rgba(0, 0, 0, 0.2);
-}
-.prohunt-demo-card-image.mdl-card {
-    width: 272px;
-    height: 222px;
-    background: url('../../img/logo/product hunt-logo.jpg') center / cover no-repeat;
-    background-size: 160px 160px;
-    background-color: #fff;
-}
-.prohunt-demo-card-image > .mdl-card__actions {
-    height: 50px;
-    padding: 16px;
-    background: rgba(0, 0, 0, 0.2);
-}
-.tesla-demo-card-image.mdl-card {
-    width: 272px;
-    height: 222px;
-    background: url('../../img/logo/tesla-logo.png') center / cover no-repeat;
-    background-size: 160px 160px;
-    background-color: #fff;
-}
-.tesla-demo-card-image > .mdl-card__actions {
+.demo-card-image > .mdl-card__actions {
     height: 50px;
     padding: 16px;
     background: rgba(0, 0, 0, 0.2);
@@ -202,4 +81,128 @@ body {
 }
 .dialogdemoBasicUsage div#status {
     color: #c60008;
+}
+
+.amazon {
+	background: url("../../img/logo/amazon-logo.jpg") center / cover no-repeat;
+}
+
+.apple {
+	background: url("../../img/logo/apple-logo.jpg") center / cover no-repeat;
+}
+
+.beme {
+	background: url("../../img/logo/beme-logo.jpg") center / cover no-repeat;
+}
+
+.boosted {
+	background: url("../../img/logo/boosted boards-logo.jpg") center / cover no-repeat;
+}
+
+.dji {
+	background: url("../../img/logo/dji-logo.jpg") center / cover no-repeat;
+}
+
+.facebook {
+	background: url("../../img/logo/facebook-logo.jpg") center / cover no-repeat;
+}
+
+.flipkart {
+	background: url("../../img/logo/flipkart-logo.jpg") center / cover no-repeat;
+}
+
+.google {
+	background: url("../../img/logo/google-logo.jpg") center / cover no-repeat;
+}
+
+.infosys {
+	background: url("../../img/logo/infosys-logo.jpg") center / cover no-repeat;
+}
+
+.jugnoo {
+	background: url("../../img/logo/jugnoo-logo.jpg") center / cover no-repeat;
+}
+
+.lyst {
+	background: url("../../img/logo/lyst-logo.jpg") center / cover no-repeat;
+}
+
+.manfrotto {
+	background: url("../../img/logo/manfrotto-logo.jpg") center / cover no-repeat;
+}
+
+.medium {
+	background: url("../../img/logo/medium-logo.jpg") center / cover no-repeat;
+}
+
+.microsoft {
+	background: url("../../img/logo/microsoft-logo.jpg") center / cover no-repeat;
+}
+
+.nike {
+	background: url("../../img/logo/nike-logo.jpg") center / cover no-repeat;
+}
+
+.nikon {
+	background: url("../../img/logo/nikon-logo.jpg") center / cover no-repeat;
+}
+
+.ola {
+	background: url("../../img/logo/ola-logo.jpg") center / cover no-repeat;
+}
+
+.oyo {
+	background: url("../../img/logo/oyo rooms-logo.jpg") center / cover no-repeat;
+}
+
+.paytm {
+	background: url("../../img/logo/paytm-logo.jpg") center / cover no-repeat;
+}
+
+.peach {
+	background: url("../../img/logo/peach-logo.jpg") center / cover no-repeat;
+}
+
+.product {
+	background: url("../../img/logo/product hunt-logo.jpg") center / cover no-repeat;
+}
+
+.samsung {
+	background: url("../../img/logo/samsung-logo.jpg") center / cover no-repeat;
+}
+
+.snapchat {
+	background: url("../../img/logo/snapchat-logo.jpg") center / cover no-repeat;
+}
+
+.snapdeal {
+	background: url("../../img/logo/snapdeal-logo.jpg") center / cover no-repeat;
+}
+
+.tata {
+	background: url("../../img/logo/tata consultancy services-logo.jpg") center / cover no-repeat;
+}
+
+.tesla {
+	background: url("../../img/logo/tesla-logo.jpg") center / cover no-repeat;
+}
+
+.twitter {
+	background: url("../../img/logo/twitter-logo.jpg") center / cover no-repeat;
+}
+
+.uber {
+	background: url("../../img/logo/uber-logo.jpg") center / cover no-repeat;
+}
+
+.youtube {
+	background: url("../../img/logo/youtube-logo.jpg") center / cover no-repeat;
+}
+
+.zomato {
+	background: url("../../img/logo/zomato-logo.jpg") center / cover no-repeat;
+}
+
+.freecharge {
+	background: url("../../img/logo/freecharge-logo.jpg") center / cover no-repeat;
 }

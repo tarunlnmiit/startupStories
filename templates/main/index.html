@@ -25,14 +25,7 @@
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
 
-    <link rel="shortcut icon" href="images/favicon.png">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel                          ="canonical" href="http://www.example.com/">
-    -->
-
-    {% include 'headCss.html' %}
+    <link rel="shortcut icon" href="images/favicon.png"> {% include 'headCss.html' %}
 
     <link rel="stylesheet" href="{% static 'css/main/mainStyle.css' %}">
     <style>
@@ -50,45 +43,21 @@
 
 <body>
     <div ng-app="MyApp" ng-controller="AppCtrl">
-    <div class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <main class="mdl-layout__content">
+        <div class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+            <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+                <main class="mdl-layout__content">
 
-                {% include 'navbar.html' %}
+                    {% include 'navbar.html' %}
 
-                        <section class="demo-card">
+                    {% include 'main/cards.html' %}
 
-                            {% include 'main/companyCards/google-card.html' %}
-
-                            {% include 'main/companyCards/amazon-card.html' %}
-
-                            {% include 'main/companyCards/boosted-card.html' %}
-
-                            {% include 'main/companyCards/dji-card.html' %}
-
-                            {% include 'main/companyCards/flipkart-card.html' %}
-
-                            {% include 'main/companyCards/jugnoo-card.html' %}
-
-                            {% include 'main/companyCards/lyst-card.html' %}
-
-                            {% include 'main/companyCards/nike-card.html' %}
-
-                            {% include 'main/companyCards/oyo-card.html' %}
-
-                            {% include 'main/companyCards/prohunt-card.html' %}
-
-                            {% include 'main/companyCards/tesla-card.html' %}
-
-                        </section>
-
-                    </div>
+            </div>
 
 
-                </div>
-              </div>
-            </main>
         </div>
+    </div>
+    </main>
+    </div>
     </div>
 
     {% include 'headJs.html' %}
