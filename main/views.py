@@ -1,4 +1,6 @@
-from django.shortcuts import render_to_response
+from django.contrib.auth import logout as auth_logout
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import render_to_response, redirect, render
 from django.template import RequestContext
 import MySQLdb
 # Create your views here.
@@ -27,3 +29,15 @@ def home(request, template='main/index.html', page_template='main/cards.html'):
         template = page_template
     return render_to_response(template, companies,
                               context_instance=RequestContext(request))
+
+
+def login(request):
+    # context = RequestContext(request, {
+    #     'request': request, 'user': request.user})
+    # return render_to_response('login.html', context_instance=context)
+    return render(request, 'main/login.html', {})
+
+
+def logout(request):
+    auth_logout(request)
+    return redirect('home')
