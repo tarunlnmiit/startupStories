@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'changeLog',
     'contact',
     'demo',
-    'endless_pagination',
+    'el_pagination',
     'main',
     'django.contrib.admin',
     'django.contrib.auth',

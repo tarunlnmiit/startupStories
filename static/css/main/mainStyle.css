@@ -27,18 +27,18 @@ body {
 .demo-card-image.mdl-card {
     width: 272px;
     height: 222px;
-    background-size: 160px 160px;
+    background-size: 140px 140px;
     background-color: #fff;
 }
 .demo-card-image > .mdl-card__actions {
-    height: 50px;
-    padding: 16px;
+    height: 40px;
+    padding: 10px;
     background: rgba(0, 0, 0, 0.2);
 }
 .back-demo-card-image.mdl-card {
     width: 272px;
     height: 222px;
-    float: left;
+    /*float: left;*/
     padding: 5px;
 }
 .logo-size {
@@ -57,12 +57,22 @@ body {
 .font-data {
     padding: 4px;
 }
+.font-size-founders {
+    font-size: 12px;
+}
 .para {
     width: 75%;
 }
 .social-icons {
     padding-left: 10px;
     align-self: center;
+}
+.more-container {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto";
+    line-height: 50px;
 }
 .dialogdemoBasicUsage {
     position: relative;

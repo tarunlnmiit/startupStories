@@ -8,6 +8,9 @@
 
 <body>
     <section class="demo-card">
+        {% load el_pagination_tags %}
+
+        {% paginate data %}
 
         {% for entry in data %}
         <div id="pads">
@@ -23,83 +26,104 @@
                     </div>
                     <div class="back">
                         <div class="back-demo-card-image mdl-card mdl-shadow--2dp" id="flt">
-                            <a href="http://{{ entry.11 }}" target="_blank"><img src="{% with 'img/logo/'|add:entry.1.lower|add:'-logo.jpg' as image_static %}
-                            {% static image_static %}
-                            {% endwith %}" class="logo-size" id="flt" /></a>
-                            <div id="flt" class="line-align">{{ entry.1 }}
-                                <br />{{ entry.3 }}
-                                <br />{{ entry.4 }}</div>
-                            <div id="flt" style="padding:7.7%">
-                                <i class="zmdi zmdi-link zmdi-hc-2x"></i>
-                            </div>
-                            <div class="font-data" id="flt">
-                                <p>
-                                    {{ entry.6 }}
-                                </p>
-                                <div align="center">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="show{{ entry.1.split.0 }}Dialog($event)">Know More...</button>
-                                    <script type="text/ng-template" id="{{ entry.1.split.0.lower }}.tmpl.html">
-                                        <md-dialog aria-label="{{ entry.1 }}">
-                                            <form>
-                                                <md-toolbar>
-                                                    <div class="md-toolbar-tools">
-                                                        <h2>{{ entry.1 }}</h2>
-                                                        <span flex></span>
-                                                        <md-button class="md-icon-button" ng-click="cancel()">
-                                                            <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
-                                                        </md-button>
-                                                    </div>
-                                                </md-toolbar>
-                                                <md-dialog-content style="width:1000px;height:700px; ">
-                                                    <md-tabs md-dynamic-height md-border-bottom>
-                                                        <md-tab label="one">
-                                                            <md-content class="md-padding">
-                                                                <h1 class="md-display-2">Tab One</h1>
-                                                                <p>{{ entry.7 }}</p>
-                                                            </md-content>
-                                                        </md-tab>
-                                                        <md-tab label="two">
-                                                            <md-content class="md-padding">
-                                                                <h1 class="md-display-2">Tab Two</h1>
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices.
-                                                                    Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien
-                                                                    arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et.
-                                                                    Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum
-                                                                    ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
-                                                                <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam
-                                                                    in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis.
-                                                                    Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
-                                                                <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat,
-                                                                    at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
-                                                            </md-content>
-                                                        </md-tab>
-                                                        <md-tab label="three">
-                                                            <md-content class="md-padding">
-                                                                <h1 class="md-display-2">Tab Three</h1>
-                                                                <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat,
-                                                                    at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
-                                                            </md-content>
-                                                        </md-tab>
-                                                    </md-tabs>
-                                                </md-dialog-content>
+                            <table style="width:100%">
+                                <tr>
+                                    <td align="center">
+                                        <a href="http://{{ entry.11 }}" target="_blank"><img src="{% with 'img/logo/'|add:entry.1.lower|add:'-logo.jpg' as image_static %}
+                                        {% static image_static %}
+                                        {% endwith %}" class="logo-size" id="flt" />
+                                        </a>
+                                    </td>
+                                    <td align="center">
+                                        <div id="flt" class="line-align"><b>{{ entry.1 }}</b>
+                                            <br />
+                                            <div class="font-size-founders">
+                                                <i>{{ entry.3 }}</i>
+                                                <br />{{ entry.4 }}
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td align="center">
+                                        <a href="http://{{ entry.11 }}" target="_blank">
+                                            <!-- <i class="zmdi zmdi-link"></i> -->
+                                            <i class="fa fa-external-link fa-2x"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" align="center">
+                                        <p>
+                                            {{ entry.6 }}
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" align="center">
+                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="show{{ entry.1.split.0 }}Dialog($event)">Know More...</button>
+                                        <script type="text/ng-template" id="{{ entry.1.split.0.lower }}.tmpl.html">
+                                            <md-dialog aria-label="{{ entry.1 }}">
+                                                <form>
+                                                    <md-toolbar>
+                                                        <div class="md-toolbar-tools">
+                                                            <h2>{{ entry.1 }}</h2>
+                                                            <span flex></span>
+                                                            <md-button class="md-icon-button" ng-click="cancel()">
+                                                                <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+                                                            </md-button>
+                                                        </div>
+                                                    </md-toolbar>
+                                                    <md-dialog-content style="width:1000px;height:700px; ">
+                                                        <md-tabs md-dynamic-height md-border-bottom>
+                                                            <md-tab label="one">
+                                                                <md-content class="md-padding">
+                                                                    <h1 class="md-display-2">Tab One</h1>
+                                                                    <p>{{ entry.7 }}</p>
+                                                                </md-content>
+                                                            </md-tab>
+                                                            <md-tab label="two">
+                                                                <md-content class="md-padding">
+                                                                    <h1 class="md-display-2">Tab Two</h1>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium
+                                                                        ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim,
+                                                                        vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis
+                                                                        tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis,
+                                                                        iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci
+                                                                        posuere, nec luctus mauris semper.</p>
+                                                                    <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam
+                                                                        in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor
+                                                                        turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
+                                                                    <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat,
+                                                                        at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                                                </md-content>
+                                                            </md-tab>
+                                                            <md-tab label="three">
+                                                                <md-content class="md-padding">
+                                                                    <h1 class="md-display-2">Tab Three</h1>
+                                                                    <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat,
+                                                                        at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                                                </md-content>
+                                                            </md-tab>
+                                                        </md-tabs>
+                                                    </md-dialog-content>
 
-                                                <md-dialog-actions layout="row">
-                                                    <md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" md-autofocus>
-                                                        More on Wikipedia
-                                                    </md-button>
-                                                    <span flex></span>
-                                                    <md-button ng-click="answer('not useful')">
-                                                        Not Useful
-                                                    </md-button>
-                                                    <md-button ng-click="answer('useful')" style="margin-right:20px;">
-                                                        Useful
-                                                    </md-button>
-                                                </md-dialog-actions>
-                                            </form>
-                                        </md-dialog>
-                                    </script>
-                                </div>
-                            </div>
+                                                    <md-dialog-actions layout="row">
+                                                        <md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" md-autofocus>
+                                                            More on Wikipedia
+                                                        </md-button>
+                                                        <span flex></span>
+                                                        <md-button ng-click="answer('not useful')">
+                                                            Not Useful
+                                                        </md-button>
+                                                        <md-button ng-click="answer('useful')" style="margin-right:20px;">
+                                                            Useful
+                                                        </md-button>
+                                                    </md-dialog-actions>
+                                                </form>
+                                            </md-dialog>
+                                        </script>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -108,6 +132,9 @@
 
         {% endfor %}
     </section>
+        <div align="center" class="more-container">
+            Load{% show_more %}
+        </div>
 </body>
 
 </html>

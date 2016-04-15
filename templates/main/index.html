@@ -51,14 +51,21 @@
 
                     {% include 'main/cards.html' %}
 
+                </main>
             </div>
-
-
         </div>
     </div>
-    </main>
-    </div>
-    </div>
+
+    {% block js %}
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="{% static 'js/main/el-pagination.js' %}"></script>
+    <script>
+        $.endlessPaginate({
+            paginateOnScroll: true,
+            paginateOnScrollChunkSize: 5
+        });
+    </script>
+    {% endblock %}
 
     {% include 'headJs.html' %}
 

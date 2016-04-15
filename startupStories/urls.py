@@ -24,14 +24,14 @@ import main.views
 
 
 urlpatterns = [
-    url(r'^about/$', about.views.about, name='about'),
+    url(r'^about/', about.views.about, name='about'),
     url(r'^admin/', admin.site.urls, name='admin'),
     url(r'^blog/', include('blog.urls')),
-    url(r'^change-log/$', changeLog.views.changeLog, name='changeLog'),
-    url(r'^contactUs/$', contact.views.contact, name='contact'),
-    url(r'^demo/$', demo.views.entry_index, name='demo'),
-    url(r'^faqs/$', about.views.faqs, name='faqs'),
+    url(r'^change-log/', changeLog.views.changeLog, name='changeLog'),
+    url(r'^contactUs/', contact.views.contact, name='contact'),
+    url(r'^demo/', include('demo.urls')),
+    url(r'^faqs/', about.views.faqs, name='faqs'),
     url(r'^$', main.views.home, name='home'),
-    url(r'^home/$', main.views.home, name='home'),
-    url(r'^privacy-terms/$', about.views.privacyTerms, name='privacy-terms'),
+    url(r'^home/', main.views.home, name='home'),
+    url(r'^privacy-terms/', about.views.privacyTerms, name='privacy-terms'),
 ]
