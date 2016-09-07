@@ -96,9 +96,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'startupStories',
-        'USER': 'root',
-        'PASSWORD': 'pass',
-        'HOST': '127.0.0.1',
+        'USER': 'dbadmin',
+        'PASSWORD': 'tgsd1234',
+        'HOST': 'tarun-mydbinstance.c1kddztu2jmp.us-west-2.rds.amazonaws.com',
     }
 }
 
