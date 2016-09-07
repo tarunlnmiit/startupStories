@@ -38,7 +38,11 @@
                                         <div id="flt" class="line-align"><b>{{ entry.1 }}</b>
                                             <br />
                                             <div class="font-size-founders">
+                                                {% if len.entry.3 <= 20 %}
                                                 <i>{{ entry.3 }}</i>
+                                                {% else %}
+                                                <i>{{ entry.3.20 }}</i>
+                                                {% endif %}
                                                 <br />{{ entry.4 }}
                                             </div>
                                         </div>
@@ -59,8 +63,8 @@
                                 </tr>
                                 <tr>
                                     <td colspan="3" align="center">
-                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="show{{ entry.1.split.0 }}Dialog($event)">Know More...</button>
-                                        <script type="text/ng-template" id="{{ entry.1.split.0.lower }}.tmpl.html">
+                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="showDialog($event, '{{ entry.1.lower }}')">Know More...</button>
+                                        <script type="text/ng-template" id="{{ entry.1.lower }}.tmpl.html">
                                             <md-dialog aria-label="{{ entry.1 }}">
                                                 <form>
                                                     <md-toolbar>

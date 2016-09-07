@@ -31,6 +31,16 @@
                         {% else %}
                           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{% url 'social:begin' 'twitter' %}?next={{ request.path }}">Login with Twitter</a>
                         {% endif %}
+                        {% if user and not user.is_anonymous %}
+                          <a class="mdl-navigation__link mdl-typography--text-uppercase">Hello, {{ user.get_full_name }}!</a>
+                          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{% url 'logout' %}">Logout</a>
+                        {% else %}
+                          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login with Facebook</a>
+                        {% endif %}
+                        {% if user and not user.is_anonymous %}
+                          <a class="mdl-navigation__link mdl-typography--text-uppercase">Hello, {{ user.get_full_name }}!</a>
+                          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{% url 'logout' %}">Logout</a>
+                        {% endif %}
                     </nav>
                 </div>
                 <span class="android-mobile-title mdl-layout-title">

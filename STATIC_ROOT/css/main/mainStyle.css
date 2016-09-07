@@ -1,0 +1,218 @@
+a {
+    text-decoration: none !important;
+}
+body {
+    /*padding: 20px;*/
+    background: #ededed;
+    position: relative;
+}
+#pads {
+    padding: 40px;
+}
+.demo-card {
+    padding: 0px;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1.5%;
+}
+.demo-card-image__filename {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+}
+.demo-card-image.mdl-card {
+    width: 272px;
+    height: 222px;
+    background-size: 140px 140px;
+    background-color: #fff;
+}
+.demo-card-image > .mdl-card__actions {
+    height: 40px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.back-demo-card-image.mdl-card {
+    width: 272px;
+    height: 222px;
+    /*float: left;*/
+    padding: 5px;
+}
+.logo-size {
+    width: 60px;
+    height: 60px;
+}
+#flt {
+    float: left;
+    display: inline;
+}
+.line-align {
+    padding: 10px;
+    text-align: center;
+    line-height: 15px;
+}
+.font-data {
+    padding: 4px;
+}
+.font-size-founders {
+    font-size: 12px;
+}
+.para {
+    width: 75%;
+}
+.social-icons {
+    padding-left: 10px;
+    align-self: center;
+}
+.more-container {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto";
+    line-height: 50px;
+}
+.dialogdemoBasicUsage {
+    position: relative;
+}
+.dialogdemoBasicUsage .footer {
+    width: 100%;
+    text-align: center;
+    margin-left: 20px;
+}
+.dialogdemoBasicUsage .footer, .dialogdemoBasicUsage .footer > code {
+    font-size: 0.8em;
+    margin-top: 50px;
+}
+.dialogdemoBasicUsage button {
+    width: 120px;
+}
+.dialogdemoBasicUsage div#status {
+    color: #c60008;
+}
+
+.amazon {
+	background: url("../../img/logo/amazon-logo.jpg") center / cover no-repeat;
+}
+
+.apple {
+	background: url("../../img/logo/apple-logo.jpg") center / cover no-repeat;
+}
+
+.beme {
+	background: url("../../img/logo/beme-logo.jpg") center / cover no-repeat;
+}
+
+.boosted {
+	background: url("../../img/logo/boosted boards-logo.jpg") center / cover no-repeat;
+}
+
+.dji {
+	background: url("../../img/logo/dji-logo.jpg") center / cover no-repeat;
+}
+
+.facebook {
+	background: url("../../img/logo/facebook-logo.jpg") center / cover no-repeat;
+}
+
+.flipkart {
+	background: url("../../img/logo/flipkart-logo.jpg") center / cover no-repeat;
+}
+
+.google {
+	background: url("../../img/logo/google-logo.jpg") center / cover no-repeat;
+}
+
+.infosys {
+	background: url("../../img/logo/infosys-logo.jpg") center / cover no-repeat;
+}
+
+.jugnoo {
+	background: url("../../img/logo/jugnoo-logo.jpg") center / cover no-repeat;
+}
+
+.lyst {
+	background: url("../../img/logo/lyst-logo.jpg") center / cover no-repeat;
+}
+
+.manfrotto {
+	background: url("../../img/logo/manfrotto-logo.jpg") center / cover no-repeat;
+}
+
+.medium {
+	background: url("../../img/logo/medium-logo.jpg") center / cover no-repeat;
+}
+
+.microsoft {
+	background: url("../../img/logo/microsoft-logo.jpg") center / cover no-repeat;
+}
+
+.nike {
+	background: url("../../img/logo/nike-logo.jpg") center / cover no-repeat;
+}
+
+.nikon {
+	background: url("../../img/logo/nikon-logo.jpg") center / cover no-repeat;
+}
+
+.ola {
+	background: url("../../img/logo/ola-logo.jpg") center / cover no-repeat;
+}
+
+.oyo {
+	background: url("../../img/logo/oyo rooms-logo.jpg") center / cover no-repeat;
+}
+
+.paytm {
+	background: url("../../img/logo/paytm-logo.jpg") center / cover no-repeat;
+}
+
+.peach {
+	background: url("../../img/logo/peach-logo.jpg") center / cover no-repeat;
+}
+
+.product {
+	background: url("../../img/logo/product hunt-logo.jpg") center / cover no-repeat;
+}
+
+.samsung {
+	background: url("../../img/logo/samsung-logo.jpg") center / cover no-repeat;
+}
+
+.snapchat {
+	background: url("../../img/logo/snapchat-logo.jpg") center / cover no-repeat;
+}
+
+.snapdeal {
+	background: url("../../img/logo/snapdeal-logo.jpg") center / cover no-repeat;
+}
+
+.tata {
+	background: url("../../img/logo/tata consultancy services-logo.jpg") center / cover no-repeat;
+}
+
+.tesla {
+	background: url("../../img/logo/tesla-logo.jpg") center / cover no-repeat;
+}
+
+.twitter {
+	background: url("../../img/logo/twitter-logo.jpg") center / cover no-repeat;
+}
+
+.uber {
+	background: url("../../img/logo/uber-logo.jpg") center / cover no-repeat;
+}
+
+.youtube {
+	background: url("../../img/logo/youtube-logo.jpg") center / cover no-repeat;
+}
+
+.zomato {
+	background: url("../../img/logo/zomato-logo.jpg") center / cover no-repeat;
+}
+
+.freecharge {
+	background: url("../../img/logo/freecharge-logo.jpg") center / cover no-repeat;
+}
