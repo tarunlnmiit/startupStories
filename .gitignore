@@ -1,8 +1,5 @@
 *.pyc
 *.sql
-config.py
-db.py
-
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
