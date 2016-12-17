@@ -1,5 +1,7 @@
 *.pyc
 *.sql
+.sqlite3
+db.py
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
