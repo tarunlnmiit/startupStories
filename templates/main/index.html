@@ -47,9 +47,7 @@
             <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
                 <main class="mdl-layout__content">
 
-                    {% include 'navbar.html' %}
-
-                    {% include 'main/cards.html' %}
+                    {% include 'navbar.html' %} {% include 'main/cards.html' %}
 
                 </main>
             </div>
@@ -65,9 +63,7 @@
             paginateOnScrollChunkSize: 4
         });
     </script>
-    {% endblock %}
-
-    {% include 'headJs.html' %}
+    {% endblock %} {% include 'headJs.html' %}
 
     <script src="{% static 'js/index.js' %}"></script>
 </body>
